@@ -1,0 +1,9 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/mikaello/devcontainer-features/kotlinc:1": {},
+        "ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
+        "ghcr.io/casl0/devcontainer-features/android-sdk:1": {}
+    },
+    "postCreateCommand": "curl -fsSL https://services.gradle.org/distributions/gradle-8.1.5-bin.zip -o gradle.zip && unzip -q gradle.zip && mv gradle-8.1.5 /opt/gradle && rm gradle.zip && echo 'export PATH=/opt/gradle/bin:$PATH' >> ~/.bashrc"
+}
